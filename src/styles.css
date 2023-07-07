@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  background-color: hsl(235, 18%, 26%);
+  height: 100%;
+  font-family: 'Roboto', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+@media (max-width:375px){
+    body {
+      margin: 0;
+      padding:0;
+      height: 100%;
+      width:fit-content;
+      background-color: hsl(0, 0%, 100%);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+@font-face {
+  font-family: "Roboto";
+  font-weight: 400;
+  src: url("./assets/fonts/Roboto-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Roboto";
+  font-size: 700;
+  src: url("./assets/fonts/Roboto-Bold.ttf");
+}
+input {
+  background-color: hsl(0, 0%, 100%);
+  color: hsl(235, 18%, 26%);
+  border: 1px solid hsl(231, 7%, 60%);
+  border-radius: 5px;
+  padding: 16px 0;
+  outline: none;
+  width: 100%;
+  text-indent: 16px;
+}
+.invalid_email {
+  margin: 0 0 0.5rem 0;
+  color: hsl(4, 100%, 67%);
+  padding:0;
+  outline: none;
+}
+.valid_email {
+  padding: 0;
+  margin: 0 0 0.5rem 0;
+  outline:none;
+}
+label {
+  margin: 16px 0 6px 0;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+input.wrong_input {
+  border: 1px solid hsl(4, 100%, 67%);
+  color:hsl(4, 100%, 67%);
+  background-color: hsl(0, 100%, 97%);
+  outline: none;
+}
